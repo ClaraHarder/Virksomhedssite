@@ -1,0 +1,154 @@
+@media (width<600px) {
+}
+body {
+  color: black;
+  background-color: #f5f5f0;
+  background-color: #f5f5f0;
+  margin: 1%;
+}
+
+main {
+  max-width: 90%;
+  justify-content: center;
+  margin: auto;
+}
+
+h1 {
+  font-family: futura;
+  color: #b73a38;
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+h2 {
+  font-family: open sans;
+  font-weight: bold;
+  font-size: 26;
+  color: #b73a38;
+}
+h3 {
+  font-family: open sans;
+  font-weight: semibold italic;
+  font-size: 22;
+  color: black;
+}
+
+.produkt {
+  background-color: white;
+  border: solid #e7e8d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: 300px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.image-grid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-god {
+  position: relative;
+  max-width: 350px;
+  height: auto;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+image-god img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 25px;
+}
+
+.tekst-image {
+  z-index: 2;
+  justify-content: end;
+  margin-left: 10px;
+}
+
+/* Style dropdown menus */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.dropdown-button {
+  background-color: #e8e4d9;
+  border: 1px solid #a09c9c;
+  font-family: futura;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropdown-button:hover {
+  transform: scale(1.1);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-family: futura;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #eee;
+}
+
+@media (min-width: 900px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .dropdown-button {
+    background-color: #e8e4d9;
+    border: 1px solid #a09c9c;
+    font-family: futura;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  .produkt {
+    width: 300px; /* Gør produktet bredere */
+    min-height: 350px; /* Eventuelt lidt højere */
+    margin: 20px auto; /* Centrerer og giver luft */
+  }
+}
