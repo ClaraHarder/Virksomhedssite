@@ -5,9 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produkter</title>
     <link rel="stylesheet" href="/css/produkter.css" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="header_flex">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.svg" alt="Logo" class="global" /></a>
+        </div>
+
+        <nav>
+          <ul class="desktop-nav">
+            <li>
+              PRODUKTER
+              <ul class="dropdown">
+                <li>alle</li>
+                <a href="produkter.html"><li>knive</li></a>
+                <li>Kværne</li>
+                <li>redskab</li>
+                <li>øvrigt</li>
+              </ul>
+            </li>
+
+            <li>
+              OM GLOBAL
+              <ul class="dropdown">
+                <a href="om.html"><li>Om Global</li></a>
+                <li>Globals mailklub</li>
+                <li>Samarbejdspartnere</li>
+                <li>Kontakt</li>
+                <li>Forhandler</li>
+              </ul>
+            </li>
+
+            <li>
+              INSPIRATION
+              <ul class="dropdown">
+                <li>Knive</li>
+                <li>Tilbehør</li>
+                <li>Vedligeholdelse</li>
+              </ul>
+            </li>
+            <li>
+              INSTASHOPPING
+              <ul class="dropdown">
+                <li>Knive</li>
+                <li>Tilbehør</li>
+                <li>Vedligeholdelse</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="right_header">
+          <div class="search">
+            <img src="img/søge1.svg" alt="Søg" class="loop" />
+          </div>
+
+          <div class="burger">
+            <div class="burger-menu" id="burger-menu">&#9776;</div>
+
+            <nav id="menu" class="hidden-menu">
+              <ul>
+                <p>MENU</p>
+                <a href="produkter.html"><li>PRODUKTER</li></a>
+                <a href="inspiration.html"><li>INSPIRATION</li></a>
+                <a href="om.html"><li>OM GLOBAL</li></a>
+                <li>INSTASHOPPING</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="sektion">
         <h1>Knive</h1>
@@ -133,7 +203,47 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="grid_1-1-footer">
+      <div class="p5">
+        <h4>A cut above the rest.</h4>
+        <p>
+          Den første Global-kniv blev designet i Japan i 1985. Kombinationen af slidstærkt stål, unikt design og et ekstremt skarp æg gjorde at interessen for Global-kniven gik hurtigt. I begyndelsen var det professionelle kokke som brugte kniven,
+          derefter fulgte hjemmekokkene efter. I dag er Global et af verdens mest populære knivmærker, og firmaet fortsætter med at levere nye, innovative modeller af køkkenknive.
+        </p>
+      </div>
+      <section class="grid_1-1-1">
+        <div>
+          <h5>Produkter:</h5>
+          <ul class="footer_list">
+            <li>knive</li>
+            <li>tilbehør</li>
+            <li>sliberedskab</li>
+            <li>skærebræt</li>
+            <li>redskab</li>
+            <li>opbevaring</li>
+            <li>tekstiler</li>
+          </ul>
+        </div>
+        <div>
+          <h5>Information:</h5>
+          <ul class="footer_list">
+            <li>Inspiration</li>
+            <li><a href="om_global.html"> Om Global</a></li>
+            <li>Forhandler</li>
+            <li>samarbejdspartnere</li>
+            <li>kontakt</li>
+          </ul>
+        </div>
+        <div>
+          <h5>Følg os</h5>
+          <ul class="footer_list">
+            <li><a href="https://www.instagram.com/globalknives_denmark/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/GlobalkniveDanmark/?locale=da_DK">Facebook</a></li>
+          </ul>
+        </div>
+      </section>
+      <a href="om_global.html"><img class="footer_logo" src="img/global_1.png" alt="logo" /></a>
+    
       <script src="/js/script.js"></script>
     </footer>
   </body>

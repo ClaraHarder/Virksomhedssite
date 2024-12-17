@@ -20,13 +20,14 @@ footer {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
-.fisk{
+.fisk {
   position: relative;
 }
 @media (width<600px) {
   main {
-    /* max-width: 500px; */
+    max-width: 500px;
     margin: auto;
     gap: 1;
   }
@@ -92,21 +93,9 @@ a {
   }
   video {
     max-width: 100%;
+    height: 40%;
   }
-  .rødfisk {
-    width: 40%;
-    height: auto;
-    position: absolute;
-    top: 195%;
-    left: 35%;
-  }
-  .sortfisk {
-    width: 65%;
-    height: auto;
-    position: absolute;
-    top: 185%;
-    left: 0%;
-  }
+
   p {
     margin-top: 0;
   }
@@ -117,6 +106,17 @@ a {
     padding: 0;
     /* align-items: end; */
     text-align: center;
+  }
+  .sortfisk {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    margin-left: 50px;
+    height: 100%;
+  }
+  .rødfisk {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    margin-right: 80px;
   }
 }
 
@@ -160,7 +160,7 @@ a {
     width: 100%;
     height: 100%;
     grid-column: 2 / 3;
-    grid-row: 7 / 9;
+    grid-row: 7 / 8;
   }
   .p1 {
     margin-top: 0;
@@ -178,9 +178,9 @@ a {
     grid-row: 7 / 8;
   }
   .p4 {
-    margin-top: 0;
+    margin-top: 40px;
     grid-column: 2 / 3;
-    grid-row: 9 / 10;
+    grid-row: 8/9;
   }
   .tegn {
     width: 60%;
@@ -193,17 +193,16 @@ a {
     padding: 2em;
   }
   .sortfisk {
-    width: 65%;
-    position: absolute;
-    top: 200%;
-    z-index: 2;
-    left: -5%;
+    grid-column: 1 / 2;
+    grid-row: 8 / 10;
+    margin-left: 50px;
+    height: 100%;
+    width: 100%;
   }
   .rødfisk {
-    width: 30%;
-    position: absolute;
-    top: 225%;
-    left: 35%;
+    grid-column: 2 / 3;
+    grid-row: 9 / 10;
+    margin-right: 80px;
   }
   .grid_1-1-1 {
     display: grid;
@@ -219,6 +218,7 @@ a {
   }
   video {
     max-width: 100%;
+    height: 40%;
   }
   .grid_1-1 {
     display: grid;
@@ -250,7 +250,7 @@ a {
     width: 100%;
     height: 100%;
     grid-column: 2 / 3;
-    grid-row: 7 / 9;
+    grid-row: 7 / 8;
   }
   .p1 {
     margin-top: 0;
@@ -270,7 +270,7 @@ a {
   .p4 {
     margin-top: 0;
     grid-column: 2 / 3;
-    grid-row: 9 / 10;
+    grid-row: 8 / 9;
   }
   .tegn {
     width: 60%;
@@ -283,29 +283,39 @@ a {
     padding: 2em;
   }
   .sortfisk {
-    width: 65%;
-    position: absolute;
-    top: 320%;
-    /* z-index: 2; */
-    left: -5%;
+    grid-column: 1 / 2;
+    grid-row: 8 / 10;
+    margin-left: -160px;
+    height: 100%;
+    width: 100%;
+    left: 0;
   }
   .rødfisk {
-    width: 30%;
-    position: absolute;
-    top: 375%;
-    left: 40%;
+    grid-column: 1 / 2;
+    grid-row: 9 / 10;
+    margin-right: 1;
+    margin-top: -50%;
+    width: 50%;
+    margin-left: 270px;
   }
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  p{
+  p {
     font-size: larger;
   }
-  h2{
+  h2 {
     font-size: 170%;
   }
-  h1{
+  h1 {
     font-size: 220%;
+  }
+  .grid_1-1-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4em;
+    column-gap: 0.5em;
+    position: relative;
   }
 }
