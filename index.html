@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="script.js" defer></script>
+    <meta name="robots" content="noindex" />
   </head>
 
   <body>
     <header>
       <div class="header_flex">
         <div class="logo">
-          <a href="index.html"><img src="img/logo.svg" alt="Logo" class="global" /></a>
+          <a href="index.html"
+            ><img src="img/logo.svg" alt="Logo" class="global"
+          /></a>
         </div>
 
         <nav>
           <ul class="desktop-nav">
             <li>
-              PRODUKTER
+              <a href="produkter.html">PRODUKTER</a>
               <ul class="dropdown">
                 <li>alle</li>
                 <a href="produkter.html"><li>knive</li></a>
@@ -30,7 +33,7 @@
             </li>
 
             <li>
-              OM GLOBAL
+              <a href="om_global.html">OM GLOBAL</a>
               <ul class="dropdown">
                 <a href="om_global.html"><li>Om Global</li></a>
                 <li>Globals mailklub</li>
@@ -41,21 +44,9 @@
             </li>
 
             <li>
-              INSPIRATION
-              <ul class="dropdown">
-                <li>Knive</li>
-                <li>Tilbehør</li>
-                <li>Vedligeholdelse</li>
-              </ul>
+              <a href="inspiration.html">INSPIRATION</a>
             </li>
-            <li>
-              INSTASHOPPING
-              <ul class="dropdown">
-                <li>Knive</li>
-                <li>Tilbehør</li>
-                <li>Vedligeholdelse</li>
-              </ul>
-            </li>
+            <li>INSTASHOPPING</li>
           </ul>
         </nav>
 
@@ -72,7 +63,7 @@
                 <p>MENU</p>
                 <a href="produkter.html"><li>PRODUKTER</li></a>
                 <a href="inspiration.html"><li>INSPIRATION</li></a>
-                <a href="om.html"><li>OM GLOBAL</li></a>
+                <a href="om_global.html"><li>OM GLOBAL</li></a>
                 <li>INSTASHOPPING</li>
               </ul>
             </nav>
@@ -89,46 +80,62 @@
           <img src="img/global-red.svg" alt="Logo" />
         </div>
       </section>
-      <section>
-        <h1>HEADER 1</h1>
 
-        <div class="grid_1_1">
+      <section>
+        <h1>a cut above the rest</h1>
+
+        <div>
           <div class="flex1">
-            <div>
-              <img src="img/kniv2.webp" alt="Knive" />
+            <div class="img-container">
+              <img src="img/global.webp" alt="Knive" />
             </div>
             <div class="tekst_flex">
-              <h2>HEADER 2</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ducimus obcaecati minus voluptatem dicta in, tenetur recusandae veritatis accusantium aut exercitationem enim voluptas, corrupti, facere blanditiis assumenda. Nemo, officia
-                dicta. Amet facilis sunt exercitationem mollitia neque modi, ducimus soluta quibusdam id dolore velit quasi blanditiis.
-              </p>
+              <h2>Om global</h2>
+
+              <div class="tekst">
+                <p>
+                  Den første Global-kniv blev designet i Japan i 1985.
+                  Kombinationen af slidstærkt stål, unikt design og et ekstremt
+                  skarp æg gjorde at interessen for Global-kniven gik hurtigt. I
+                  begyndelsen var det professionelle kokke som brugte kniven,
+                  derefter fulgte hjemmekokkene efter. I dag er Global et af
+                  verdens mest populære knivmærker, og firmaet fortsætter med at
+                  levere nye, innovative modeller af køkkenknive.
+                </p>
+              </div>
 
               <div class="btn">
-                <p>Udforsk Knive</p>
+                <a href="om_global.html"><p>Udforsk</p></a>
               </div>
             </div>
 
-            <div class="overlay1">
+            <div class="koi1">
               <img src="img/sort_koi.svg" alt="Et billede" />
             </div>
           </div>
 
           <div class="flex2">
-            <div>
-              <img src="img/kniv2.webp" alt="Knive" />
+            <div class="img-container">
+              <img src="img/inspi.webp" alt="Knive" />
             </div>
             <div class="tekst_flex">
-              <h2>HEADER 2</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ducimus obcaecati minus voluptatem dicta in, tenetur recusandae veritatis accusantium aut exercitationem enim voluptas, corrupti, facere blanditiis assumenda. Nemo, officia
-                dicta. Amet facilis sunt exercitationem mollitia neque modi, ducimus soluta quibusdam id dolore velit quasi blanditiis.
-              </p>
+              <h2>Bliv Inspireret i Køkkenet</h2>
+
+              <div class="tekst">
+                <p>
+                  På vores inspirationsside finder du kreative opskrifter,
+                  nyttige tips og spændende guides til at løfte dine
+                  madlavningsevner. Uanset om du er nybegynder eller øvet, er
+                  der masser af idéer til at gøre køkkenet til dit nye
+                  favoritrum.
+                </p>
+              </div>
+
               <div class="btn">
-                <p>Udforsk Knive</p>
+                <p>Udforsk</p>
               </div>
             </div>
-            <div class="overlay2">
+            <div class="koi2">
               <img src="img/sort_koi.svg" alt="Et billede" />
             </div>
           </div>
@@ -139,30 +146,51 @@
         <img src="img/tegn2.svg" alt="Japanske tegn" class="moving-img" />
       </section>
 
-      <section>
+      <section class="pop">
+        <h2>populære kategorier</h2>
         <div class="grid2_1">
-          <div>
-            <img src="img/kniv3.webp" alt="" />
+          <div class="img_container">
+            <img src="img/universal.webp" alt="" />
           </div>
 
           <div class="tekst_flex">
-            <h2>HEADER 2</h2>
-
-            <h3>HEADER 3</h3>
+            <h3>universalknive</h3>
 
             <div class="btn">
               <p>Udforsk</p>
             </div>
           </div>
 
-          <div>
-            <img src="img/kniv3.webp" alt="" />
+          <div class="img_container">
+            <img src="img/wood.webp" alt="" />
           </div>
 
           <div class="tekst_flex">
-            <h2>HEADER 2</h2>
+            <h3>skærebræt</h3>
 
-            <h3>HEADER 3</h3>
+            <div class="btn">
+              <p>Udforsk</p>
+            </div>
+          </div>
+
+          <div class="img_container">
+            <img src="img/brod.webp" alt="" />
+          </div>
+
+          <div class="tekst_flex">
+            <h3>brødknive</h3>
+
+            <div class="btn">
+              <p>Udforsk</p>
+            </div>
+          </div>
+
+          <div class="img_container">
+            <img src="img/greens.webp" alt="" />
+          </div>
+
+          <div class="tekst_flex">
+            <h3>grøntsagshakker</h3>
 
             <div class="btn">
               <p>Udforsk</p>
@@ -175,8 +203,13 @@
       <div class="p5">
         <h4>A cut above the rest.</h4>
         <p>
-          Den første Global-kniv blev designet i Japan i 1985. Kombinationen af slidstærkt stål, unikt design og et ekstremt skarp æg gjorde at interessen for Global-kniven gik hurtigt. I begyndelsen var det professionelle kokke som brugte kniven,
-          derefter fulgte hjemmekokkene efter. I dag er Global et af verdens mest populære knivmærker, og firmaet fortsætter med at levere nye, innovative modeller af køkkenknive.
+          Den første Global-kniv blev designet i Japan i 1985. Kombinationen af
+          slidstærkt stål, unikt design og et ekstremt skarp æg gjorde at
+          interessen for Global-kniven gik hurtigt. I begyndelsen var det
+          professionelle kokke som brugte kniven, derefter fulgte hjemmekokkene
+          efter. I dag er Global et af verdens mest populære knivmærker, og
+          firmaet fortsætter med at levere nye, innovative modeller af
+          køkkenknive.
         </p>
       </div>
       <section class="grid_1-1-1">
@@ -205,12 +238,23 @@
         <div>
           <h5>Følg os</h5>
           <ul class="footer_list">
-            <li><a href="https://www.instagram.com/globalknives_denmark/">Instagram</a></li>
-            <li><a href="https://www.facebook.com/GlobalkniveDanmark/?locale=da_DK">Facebook</a></li>
+            <li>
+              <a href="https://www.instagram.com/globalknives_denmark/"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/GlobalkniveDanmark/?locale=da_DK"
+                >Facebook</a
+              >
+            </li>
           </ul>
         </div>
       </section>
-      <a href="om_global.html"><img class="footer_logo" src="img/global_1.png" alt="logo" /></a>
+      <a href="om_global.html"
+        ><img class="footer_logo" src="img/global_1.png" alt="logo"
+      /></a>
     </footer>
   </body>
 </html>
