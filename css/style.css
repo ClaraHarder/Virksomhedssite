@@ -215,7 +215,7 @@ a {
   .right_header {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 3px;
   }
 
   .search {

@@ -319,3 +319,16 @@ a {
     position: relative;
   }
 }
+input{
+  border-color: black;
+}
+button{
+  border-radius: 0;
+  color: white;
+  background-color: #b73a38 ;
+
+}
+form{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
