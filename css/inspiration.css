@@ -50,6 +50,15 @@ h3 {
 .rodfisk img{
   height: 150px;
 }
+.sortfisk{
+  position: absolute;
+  margin-left: -75%;
+  margin-top: 55%;
+  transform: rotate(-95deg);
+}
+.sortfisk img{
+  height: 150px;
+}
 .box1{
     padding: 15% 4% 15% 4%;
     background-color: #E8E4D9;
