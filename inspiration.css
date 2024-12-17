@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    --baggrund: #F5F5F0;
+    --h1os: #B73A38;
+    background-color: var(--baggrund);
+}
+body {
+    background-color: #f5f5f0;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+main {
+    max-width: 90%;
+    justify-content: center;
+    margin: auto;
+  }
+h1 {
+    font-family: futura;
+    font-weight: bold;
+    font-size: 64;
+    color: #b73a38;
+  }
+h2 {
+    font-family: open sans;
+    font-weight: bold;
+    font-size: 26;
+    color: #b73a38;
+    margin: 2%;
+  }
+h3 {
+    font-family: open sans;
+    font-weight: semibold italic;
+    font-size: 22;
+    color: black;
+    margin-bottom: 2%;
+  }
+  
+.rodfisk{
+  position: absolute;
+  margin-left: 70%;
+  margin-top: -55%;
+  transform: rotate(-50deg);
+}
+.rodfisk img{
+  height: 150px;
+}
+.box1{
+    padding: 15% 4% 15% 4%;
+    background-color: #E8E4D9;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.p-o{
+    text-align: center;
+  }
+  .k-g{
+    text-align: center;
+  }
+.tegn
+  {
+    margin: 5%;
+  }
+  .tegn1{
+  display: none;
+   margin: 5%;
+   padding-left: 26%;
+  }
+  .grid_1-1-1{
+    display: none;
+  }
+  @media(width >= 900px){
+    .carousel{
+        display: none;
+    }
+    .box1{
+        display: none;
+    }
+    .tegn{
+        display: none;
+    }
+    .tegn1{
+      display: flex;
+    }
+    .grid_1-1-1{
+        display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr); 
+            gap: 10px; 
+            max-width: 800px;
+    }
+    .grid-item img {
+        width: 100%;
+        height: auto;
+        max-height: 150px;
+        display: block;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .box2{
+        padding: 13% 5% 13% 5%;
+        background-color: #E8E4D9;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+  }
+ 
+  /*KARUSSEL*/
+  .carousel {
+    width: 80%;
+    max-width: 400px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+  }
+  
+  
+ 
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-track a {
+    flex: 0 0 100%;
+  }
+  
+  .carousel-img {
+    width: 100%;
+    flex-shrink: 0;
+    height: 200px;
+    object-fit: cover;
+  }
+  /* Skjul radio buttons */
+  input[type="radio"] {
+    display: none;
+  }
+  
+  /* Positioner rækken baseret på checked radio button */
+  #carousel-01:checked ~ .carousel-track {
+    transform: translateX(0);
+  }
+  #carousel-02:checked ~ .carousel-track {
+    transform: translateX(-100%);
+  }
+  #carousel-03:checked ~ .carousel-track {
+    transform: translateX(-200%);
+  }
+  #carousel-04:checked ~ .carousel-track {
+    transform: translateX(-300%);
+  }
+  #carousel-05:checked ~ .carousel-track {
+    transform: translateX(-400%);
+  }
+  #carousel-06:checked ~ .carousel-track {
+    transform: translateX(-500%);
+  }
+  #carousel-07:checked ~ .carousel-track {
+    transform: translateX(-600%);
+  }
+  #carousel-08:checked ~ .carousel-track {
+    transform: translateX(-700%);
+  }
+  #carousel-09:checked ~ .carousel-track {
+    transform: translateX(-800%);
+  }
+  #carousel-10:checked ~ .carousel-track {
+    transform: translateX(-900%);
+  }
+  /*karusel2*/
+  #carousel-001:checked ~ .carousel-track {
+    transform: translateX(0);
+  }
+  #carousel-002:checked ~ .carousel-track {
+    transform: translateX(-100%);
+  }
+  #carousel-003:checked ~ .carousel-track {
+    transform: translateX(-200%);
+  }
+  #carousel-004:checked ~ .carousel-track {
+    transform: translateX(-300%);
+  }
+  #carousel-005:checked ~ .carousel-track {
+    transform: translateX(-400%);
+  }
+  #carousel-006:checked ~ .carousel-track {
+    transform: translateX(-500%);
+  }
+  #carousel-007:checked ~ .carousel-track {
+    transform: translateX(-600%);
+  }
+  #carousel-008:checked ~ .carousel-track {
+    transform: translateX(-700%);
+  }
+  #carousel-009:checked ~ .carousel-track {
+    transform: translateX(-800%);
+  }
+  #carousel-010:checked ~ .carousel-track {
+    transform: translateX(-900%);
+  }
+  
+  /* Karusellens navigationsprikker */
+  .carousel-navigation {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+  
+  /* Styling af prikkerne */
+  .nav-dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #666;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .nav-dot1{
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #666;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Highlight prikken når den er valgt */
+  #carousel-01:checked ~ .carousel-navigation label[for="carousel-01"] {
+    background-color: #fefefe;
+  }
+  #carousel-02:checked ~ .carousel-navigation label[for="carousel-02"] {
+    background-color: #fefefe;
+  }
+  #carousel-03:checked ~ .carousel-navigation label[for="carousel-03"] {
+    background-color: #fefefe;
+  }
+  #carousel-04:checked ~ .carousel-navigation label[for="carousel-04"] {
+    background-color: #fefefe;
+  }
+  #carousel-05:checked ~ .carousel-navigation label[for="carousel-05"] {
+    background-color: #fefefe;
+  }
+  #carousel-06:checked ~ .carousel-navigation label[for="carousel-06"] {
+    background-color: #fefefe;
+  }
+  #carousel-07:checked ~ .carousel-navigation label[for="carousel-07"] {
+    background-color: #fefefe;
+  }
+  #carousel-08:checked ~ .carousel-navigation label[for="carousel-08"] {
+    background-color: #fefefe;
+  }
+  #carousel-09:checked ~ .carousel-navigation label[for="carousel-09"] {
+    background-color: #fefefe;
+  }
+  #carousel-10:checked ~ .carousel-navigation label[for="carousel-10"] {
+    background-color: #fefefe;
+  }
+
+  /*highlight til karussel 2*/
+  #carousel-001:checked ~ .carousel-navigation label[for="carousel-001"] {
+    background-color: #fefefe;
+  }
+  #carousel-002:checked ~ .carousel-navigation label[for="carousel-002"] {
+    background-color: #fefefe;
+  }
+  #carousel-003:checked ~ .carousel-navigation label[for="carousel-003"] {
+    background-color: #fefefe;
+  }
+  #carousel-004:checked ~ .carousel-navigation label[for="carousel-004"] {
+    background-color: #fefefe;
+  }
+  #carousel-005:checked ~ .carousel-navigation label[for="carousel-005"] {
+    background-color: #fefefe;
+  }
+  #carousel-006:checked ~ .carousel-navigation label[for="carousel-006"] {
+    background-color: #fefefe;
+  }
+  #carousel-007:checked ~ .carousel-navigation label[for="carousel-007"] {
+    background-color: #fefefe;
+  }
+  #carousel-008:checked ~ .carousel-navigation label[for="carousel-008"] {
+    background-color: #fefefe;
+  }
+  #carousel-009:checked ~ .carousel-navigation label[for="carousel-009"] {
+    background-color: #fefefe;
+  }
+  #carousel-010:checked ~ .carousel-navigation label[for="carousel-010"] {
+    background-color: #fefefe;
+  }
+
+  
