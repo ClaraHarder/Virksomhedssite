@@ -6,7 +6,7 @@
     <title>Global</title>
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="script.js" defer></script>
+    <script src="js/header.js" defer></script>
     <meta name="robots" content="noindex" />
   </head>
 
@@ -199,62 +199,86 @@
         </div>
       </section>
     </main>
-    <footer class="grid_1-1-footer">
-      <div class="p5">
-        <h4>A cut above the rest.</h4>
-        <p>
-          Den første Global-kniv blev designet i Japan i 1985. Kombinationen af
-          slidstærkt stål, unikt design og et ekstremt skarp æg gjorde at
-          interessen for Global-kniven gik hurtigt. I begyndelsen var det
-          professionelle kokke som brugte kniven, derefter fulgte hjemmekokkene
-          efter. I dag er Global et af verdens mest populære knivmærker, og
-          firmaet fortsætter med at levere nye, innovative modeller af
-          køkkenknive.
-        </p>
-      </div>
-      <section class="grid_1-1-1">
-        <div>
-          <h5>Produkter:</h5>
-          <ul class="footer_list">
-            <li>knive</li>
-            <li>tilbehør</li>
-            <li>sliberedskab</li>
-            <li>skærebræt</li>
-            <li>redskab</li>
-            <li>opbevaring</li>
-            <li>tekstiler</li>
-          </ul>
+
+    <footer>
+      <section class="footer_grid">
+        <div class="footer_tekst">
+          <h4>A cut above the rest.</h4>
+          <p>
+            Den første Global-kniv blev designet i Japan i 1985. Kombinationen
+            af slidstærkt stål, unikt design og et ekstremt skarp æg gjorde at
+            interessen for Global-kniven gik hurtigt. I begyndelsen var det
+            professionelle kokke som brugte kniven, derefter fulgte
+            hjemmekokkene efter. I dag er Global et af verdens mest populære
+            knivmærker, og firmaet fortsætter med at levere nye, innovative
+            modeller af køkkenknive.
+          </p>
+
+          <form>
+            <label for="søgefelt"></label>
+            <input type="text" />
+            <button>Søg</button>
+          </form>
+
+          <!-- <a href="om_global.html"
+            ><img class="footer_logo" src="img/global_1.png" alt="logo"
+          /></a> -->
+
+          <script
+            src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+            type="module"
+          ></script>
+          <dotlottie-player
+            src="https://lottie.host/fcb0a460-88e1-4368-a6a7-11cfd4d38f52/Pq6Zxqbjp2.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 200px; height: 200px"
+            loop
+            autoplay
+          ></dotlottie-player>
         </div>
-        <div>
-          <h5>Information:</h5>
-          <ul class="footer_list">
-            <li>Inspiration</li>
-            <li><a href="om_global.html"> Om Global</a></li>
-            <li>Forhandler</li>
-            <li>samarbejdspartnere</li>
-            <li>kontakt</li>
-          </ul>
-        </div>
-        <div>
-          <h5>Følg os</h5>
-          <ul class="footer_list">
-            <li>
-              <a href="https://www.instagram.com/globalknives_denmark/"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/GlobalkniveDanmark/?locale=da_DK"
-                >Facebook</a
-              >
-            </li>
-          </ul>
+
+        <div class="footer_flex">
+          <div>
+            <ul>
+              <h5>Produkter:</h5>
+              <li>knive</li>
+              <li>tilbehør</li>
+              <li>sliberedskab</li>
+              <li>skærebræt</li>
+              <li>redskab</li>
+              <li>opbevaring</li>
+              <li>tekstiler</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <h5>Information:</h5>
+              <li>Inspiration</li>
+              <li><a href="om_global.html"> Om Global</a></li>
+              <li>Forhandler</li>
+              <li>samarbejdspartnere</li>
+              <li>kontakt</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <h5>Følg os:</h5>
+              <li>
+                <a href="https://www.instagram.com/globalknives_denmark/"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/GlobalkniveDanmark/?locale=da_DK"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <a href="om_global.html"
-        ><img class="footer_logo" src="img/global_1.png" alt="logo"
-      /></a>
     </footer>
   </body>
 </html>
